@@ -73,7 +73,7 @@ const Testimonials = () => {
 
                                         <div className="flex flex-col items-center mt-auto">
                                             <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-4 border-gray-100 dark:border-slate-700 shadow-inner bg-slate-200 flex-shrink-0">
-                                                <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                                                <img src={testimonial.image} alt={testimonial.name} loading="lazy" className="w-full h-full object-cover" />
                                             </div>
                                             <h4 className="text-xl font-bold text-secondary-dark dark:text-white leading-tight">{testimonial.name}</h4>
                                             <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 leading-none">{testimonial.location}</p>

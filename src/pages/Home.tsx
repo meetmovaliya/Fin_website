@@ -55,8 +55,8 @@ const Home = () => {
             <section className="relative min-h-screen flex items-center overflow-hidden bg-gray-50 dark:bg-secondary-dark text-slate-900 dark:text-white transition-colors duration-300">
                 {/* Premium Animated Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div className="absolute -top-[20%] -left-[10%] w-[60%] h-[70%] bg-gradient-to-br from-primary/10 via-primary-dark/5 to-transparent dark:from-primary/20 dark:via-primary-dark/10 rounded-full blur-[120px] animate-pulse" />
-                    <div className="absolute bottom-[0%] right-[0%] w-[50%] h-[60%] bg-gradient-to-tl from-purple-200 via-blue-200 to-transparent dark:from-purple-900/20 dark:via-blue-900/10 rounded-full blur-[100px]" />
+                    <div className="absolute -top-[20%] -left-[10%] w-[60%] h-[70%] bg-gradient-to-br from-primary/10 via-primary-dark/5 to-transparent dark:from-primary/20 dark:via-primary-dark/10 rounded-full blur-[60px] animate-pulse will-change-transform" />
+                    <div className="absolute bottom-[0%] right-[0%] w-[50%] h-[60%] bg-gradient-to-tl from-purple-200 via-blue-200 to-transparent dark:from-purple-900/20 dark:via-blue-900/10 rounded-full blur-[50px] will-change-transform" />
                     {/* Grid Pattern */}
                     <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 dark:opacity-20 brightness-100 mix-blend-overlay"></div>
                 </div>
@@ -133,7 +133,7 @@ const Home = () => {
                                 </div>
 
                                 {/* Floating Elements */}
-                                <div className="absolute top-20 right-10 w-64 h-24 rounded-2xl p-4 animate-float z-30 flex items-center gap-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl shadow-xl border-2 border-green-500/30 dark:border-green-500/20 hover:border-green-500/50 transition-all">
+                                <div className="absolute top-20 right-10 w-64 h-24 rounded-2xl p-4 animate-float z-30 flex items-center gap-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl shadow-xl border-2 border-green-500/30 dark:border-green-500/20 hover:border-green-500/50 transition-all will-change-transform">
                                     <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-600 dark:text-green-400 border-2 border-green-500/40"><ShieldCheck /></div>
                                     <div>
                                         <div className="text-slate-900 dark:text-white font-bold text-lg">Approved</div>
@@ -141,7 +141,7 @@ const Home = () => {
                                     </div>
                                 </div>
 
-                                <div className="absolute bottom-16 -left-8 w-52 h-auto rounded-2xl p-4 animate-float z-30 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl shadow-xl border-2 border-blue-500/30 dark:border-blue-500/20 hover:border-blue-500/50 transition-all" style={{ animationDelay: '2s' }}>
+                                <div className="absolute bottom-16 -left-8 w-52 h-auto rounded-2xl p-4 animate-float z-30 bg-white/90 dark:bg-slate-800/90 backdrop-blur-xl shadow-xl border-2 border-blue-500/30 dark:border-blue-500/20 hover:border-blue-500/50 transition-all will-change-transform" style={{ animationDelay: '2s' }}>
                                     <div className="flex items-center gap-2 mb-2">
                                         <div className="w-7 h-7 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 border-2 border-blue-500/40"><Users size={14} /></div>
                                         <div className="text-slate-900 dark:text-white font-bold text-xs">Happy Clients</div>
@@ -223,6 +223,7 @@ const Home = () => {
                                 <img
                                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1000"
                                     alt="Office"
+                                    loading="lazy"
                                     className="w-full transform transition duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent opacity-60 dark:opacity-80"></div>
